@@ -1,0 +1,101 @@
+:root {
+  --g1: #363636;
+  --g2: #4a4a4a;
+  --g3: #5e5e5e;
+  --g4: #727272;
+  --g5: #868686;
+  --g6: #9a9a9a;
+  --g7: #aeaeae;
+  --g8: #c2c2c2;
+  --g9: #d6d6d6;
+  --g10: #eaeaea;
+  --g11: #ffffff;
+}
+
+* {
+  background-color: var(--g1);
+  color: var(--g8);
+}
+
+html,
+body,
+main,
+.titlebar-container,
+#react-container,
+.document-toc,
+.main-nav>ul,
+.main-nav>ul>li>button {
+  background-color: var(--g1) !important;
+}
+
+.logo svg {
+  fill: var(--g8) !important;
+}
+
+.properties,
+.bc-table,
+pre,
+.show {
+  background-color: rgb(49, 49, 49) !important;
+  color: var(--g9) !important;
+}
+
+.top-level-entry,
+.title,
+summary,
+code {
+  color: var(--g8) !important;
+}
+
+.bc-supports-yes {
+  color: var(--g1) !important;
+  background-color: #e4f8e1;
+}
+
+.bc-supports-no {
+  color: var(--g1);
+  background-color: #f8e1e1 !important;
+}
+
+:not(pre)>*>code,
+:not(pre)>code {
+  background-color: var(--g1);
+}
+
+.note,
+.callout-box,
+.in-page-callout,
+.learn-box,
+.prevnext>a,
+.prevnext>font>a,
+.language-menu,
+.blockIndicator,
+.experimental,
+.indicator-warning {
+  background-color: var(--g3) !important;
+  color: var(--g8) !important;
+}
+
+.dropdown-menu-items>li {
+  background-color: var(--g1) !important;
+  color: var(--g8) !important;
+}
+
+.token.boolean,
+.token.constant,
+.token.deleted,
+.token.number,
+.token.property,
+.token.symbol,
+.token.tag {
+  color: #ad2570 !important;
+}
+
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector>span,
+.token.string {
+  color: #690 !important;
+}
