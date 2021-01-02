@@ -10,6 +10,8 @@
   --g9: #d6d6d6;
   --g10: #eaeaea;
   --g11: #ffffff;
+  --b-hlink: #377abd;
+  --method: #b15f63;
 }
 
 * {
@@ -20,12 +22,19 @@
 html,
 body,
 main,
+.page-header-main,
 .titlebar-container,
 #react-container,
 .document-toc,
 .main-nav>ul,
-.main-nav>ul>li>button {
+.main-nav>ul>li>button,
+tr th,
+tr td {
   background-color: var(--g1) !important;
+}
+
+.search-button {
+  background: none;
 }
 
 .logo svg {
@@ -35,7 +44,9 @@ main,
 .properties,
 .bc-table,
 pre,
-.show {
+.show,
+input.search-input-field,
+.header-search {
   background-color: rgb(49, 49, 49) !important;
   color: var(--g9) !important;
 }
@@ -98,4 +109,13 @@ code {
 .token.selector>span,
 .token.string {
   color: #690 !important;
+}
+
+a,
+.token.keyword {
+  color: var(--b-hlink) !important;
+}
+
+.token.atrule, .token.attr-value, .token.function {
+  color: var(--method);
 }
